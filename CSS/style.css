@@ -1,0 +1,29 @@
+
+@import url("variables.css");
+@import url("reset.css");
+@import url("navbar.css");
+@import url("Home.css");
+
+@import url("About_Me.css");
+
+@import url("Certifications.css");
+
+@import url("contact.css");
+@import url("footer.css");
+@import url("responsive.css");
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* 
+*{
+background:#FFFFFF;
+backdrop-filter:blur(25px);
+} */
+
+
+/* body{
+    background:rgb(255, 253, 253) !important;
+} */

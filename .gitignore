@@ -1,0 +1,32 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/
+
+# Node / npm
+node_modules/
+
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Backup files
+*.tmp
+*.temp
+*~
+
+# JetBrains
+.idea/
+
+# System files
+*.swp

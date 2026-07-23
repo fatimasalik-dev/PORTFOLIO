@@ -1,0 +1,290 @@
+/* ==========================================================
+                    GOOGLE FONT
+========================================================== */
+/* 
+:root { */
+
+    /* ======================================================
+                        DARK THEME
+    ====================================================== */
+/* 
+    --background-color: #121212;
+
+    --surface-color: #1E1E1E;
+
+    --card-color: #252525;
+
+    --primary-text: #F5F5F5;
+
+    --secondary-text: #bee8f9;
+
+    --primary-color: #3B82F6;
+
+    --primary-hover: #2563EB;
+
+    --border-color: #333333; */
+
+
+
+    /* ======================================================
+                        TYPOGRAPHY
+    ====================================================== */
+/* 
+    --font-family: "Poppins", sans-serif;
+
+    --hero-title: 3.4rem;
+
+    --section-title: 2.2rem;
+
+    --card-title: 1.4rem;
+
+    --body-text: 1rem;
+
+    --small-text: 0.9rem; */
+
+
+
+    /* ======================================================
+                        SPACING
+    ====================================================== */
+
+    /* --space-xs: 0.5rem;
+
+    --space-sm: 1rem;
+
+    --space-md: 1.5rem;
+
+    --space-lg: 2rem;
+
+    --space-xl: 3rem;
+
+    --space-xxl: 5rem;
+ */
+
+
+    /* ======================================================
+                        BORDER RADIUS
+    ====================================================== */
+
+    /* --radius-small: 8px;
+
+    --radius-medium: 16px;
+
+    --radius-large: 30px;
+
+    --radius-round: 50px; */
+
+
+
+    /* ======================================================
+                        SHADOWS
+    ====================================================== */
+
+    /* --shadow-light:
+        0 4px 12px rgba(0,0,0,.15);
+
+    --shadow-medium:
+        0 8px 20px rgba(0,0,0,.25);
+
+    --shadow-hover:
+        0 12px 28px rgba(0,0,0,.35);
+ */
+
+
+    /* ======================================================
+                        TRANSITIONS
+    ====================================================== */
+
+    /* --transition:
+        all .3s ease;
+ */
+
+
+    /* ======================================================
+                        LAYOUT
+    ====================================================== */
+
+    /* --container-width: 1200px;
+
+} */
+
+
+
+/* ==========================================================
+                    LIGHT THEME
+========================================================== */
+
+/* body.light-mode{
+
+    --background-color:#FAFAFA;
+
+    --surface-color:#FFFFFF;
+
+    --card-color:#FFFFFF;
+
+    --primary-text:#1A1A1A;
+
+    --secondary-text:#555555;
+
+    --border-color:#DDDDDD;
+
+} */
+
+
+/* ==========================================================
+                    GLOBAL VARIABLES
+========================================================== */
+
+:root {
+
+    /* ======================================================
+                        PROFESSIONAL LIGHT THEME
+    ====================================================== */
+
+    --background-color:#FFFFFF;
+
+    --surface-color:#F1F6FC;
+        /* --surface-color:#F1F6FC; */
+
+
+    /* --card-color:#F1F6FC; */
+         /* --card-color:#fcfcfc;  */
+
+
+    --primary-text: #0e0f10;
+
+    --secondary-text: #242629;
+
+    --primary-color: #032161;
+
+    --primary-hover: #1D4ED8;
+
+    --border-color: #E5E7EB;
+
+    /* ======================================================
+                        TYPOGRAPHY
+    ====================================================== */
+
+    --font-family: "Poppins", sans-serif;
+
+    --hero-title: 3.4rem;
+
+    --section-title: 2.2rem;
+
+    --card-title: 1.4rem;
+
+    --body-text: 1rem;
+
+    --small-text: 0.9rem;
+
+    /* ======================================================
+                        SPACING
+    ====================================================== */
+
+    --space-xs: 0.5rem;
+
+    --space-sm: 1rem;
+
+    --space-md: 1.5rem;
+
+    --space-lg: 2rem;
+
+    --space-xl: 3rem;
+
+    --space-xxl: 5rem;
+
+    /* ======================================================
+                        BORDER RADIUS
+    ====================================================== */
+
+    --radius-small: 8px;
+
+    --radius-medium: 16px;
+
+    --radius-large: 30px;
+
+    --radius-round: 50px;
+
+    /* ======================================================
+                        SHADOWS
+    ====================================================== */
+
+     --shadow-light:
+        0 4px 12px rgba(242, 231, 231, 0.06);
+
+    --shadow-medium:
+        0 8px 20px rgba(234, 242, 246, 0.1);
+
+    --shadow-hover:
+        0 12px 30px rgba(226, 235, 238, 0.15); 
+
+    /* ======================================================
+                        TRANSITIONS
+    ====================================================== */
+
+    --transition: 
+    all .25s ease;
+--transition-hover:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+    /* ======================================================
+                        LAYOUT
+    ====================================================== */
+
+    --container-width: 1200px;
+
+}
+
+
+/* ==========================================================
+                    OPTIONAL DARK MODE
+    (We'll activate this later with JavaScript)
+========================================================== */
+
+body.dark-mode{
+
+    --background-color:#121212;
+
+    --surface-color:#1E1E1E;
+
+    --card-color:#252525;
+
+    --primary-text:#F5F5F5;
+
+    --secondary-text:#B0BEC5;
+
+    --primary-color:#3B82F6;
+
+    --primary-hover:#2563EB;
+
+    --border-color:#333333;
+
+    --shadow-light:
+        0 4px 12px rgba(0,0,0,.25);
+
+    --shadow-medium:
+        0 8px 20px rgba(0,0,0,.35);
+
+    --shadow-hover:
+        0 12px 30px rgba(0,0,0,.45);
+
+}
+
+
+/* ...... */
+ /* .about{
+    background: var(--surface-color);
+}
+
+.projects{
+    background: var(--background-color);
+}
+
+.skills{
+    background: var(--surface-color);
+}
+
+.contact{
+    background: var(--background-color);
+}  */

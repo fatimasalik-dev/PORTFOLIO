@@ -1,0 +1,167 @@
+/* ==========================================================
+                        NAVIGATION BAR
+========================================================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background-color:var(--background-color);
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+/* ==========================================================
+                        NAVBAR
+========================================================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+
+
+/* ==========================================================
+                        LOGO
+========================================================== */
+
+.logo a{
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+    transition:var(--transition);
+
+}
+
+.logo a:hover{
+
+    color:var(--primary-hover);
+
+}
+
+
+
+/* ==========================================================
+                    NAVIGATION LINKS
+========================================================== */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+
+
+.nav-links a{
+
+    color:var(--primary-text);
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+
+
+/* ==========================================================
+                    LINK HOVER EFFECT
+========================================================== */
+
+.nav-links a:hover{
+
+    color:var(--primary-color);
+
+}
+
+
+
+/* Animated underline */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background-color:var(--primary-color);
+
+    transition:var(--transition);
+
+}
+
+
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================================================
+                    ACTIVE PAGE
+========================================================== */
+
+.nav-links .active{
+
+    color:var(--primary-color);
+
+}
+
+
+
+.nav-links .active::after{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================================================
+                    NAVBAR SHADOW
+========================================================== */
+
+header{
+
+    box-shadow:var(--shadow-light);
+
+}

@@ -1,0 +1,149 @@
+/* ==========================================================
+                        FOOTER
+========================================================== */
+
+footer{
+
+    background:var(--surface-color);
+
+    border-top:1px solid var(--border-color);
+
+    padding:4rem 0 2rem;
+
+}
+
+
+
+/* ==========================================================
+                    FOOTER CONTENT
+========================================================== */
+
+.footer-content{
+
+    max-width:750px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+
+/* ==========================================================
+                    NAME
+========================================================== */
+
+.footer-content h3{
+
+    font-size:2rem;
+
+    color:var(--primary-text);
+
+    margin-bottom:.75rem;
+
+}
+
+
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.footer-title{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    margin-bottom:1.5rem;
+
+}
+
+
+
+/* ==========================================================
+                    DESCRIPTION
+========================================================== */
+
+.footer-description{
+
+    max-width:600px;
+
+    margin:0 auto 2.5rem;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================================================
+                    BACK TO TOP
+========================================================== */
+
+.back-to-top{
+
+    display:inline-block;
+
+    margin-bottom:2.5rem;
+
+    padding:.85rem 1.8rem;
+
+    border:2px solid var(--primary-color);
+
+    border-radius:50px;
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+
+
+.back-to-top:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ==========================================================
+                    FOOTER BOTTOM
+========================================================== */
+
+.footer-bottom{
+
+    border-top:1px solid var(--border-color);
+
+    padding-top:1.5rem;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+}
+
+
+
+.footer-bottom p{
+
+    color:var(--secondary-text);
+
+    font-size:.95rem;
+
+}
