@@ -165,3 +165,175 @@ header{
     box-shadow:var(--shadow-light);
 
 }
+
+
+/* ==========================================================
+                MOBILE MENU BUTTON
+========================================================== */
+
+.menu-toggle {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: var(--primary-text);
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+}
+
+
+.menu-toggle:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* ==========================================================
+                RESPONSIVE NAVIGATION
+========================================================== */
+
+@media (max-width: 900px) {
+
+
+    .navbar {
+
+        position: relative;
+
+    }
+
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 80px;
+
+        right: 0;
+
+        width: 240px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 1rem 0;
+
+        background-color: var(--background-color);
+
+        border: 1px solid var(--border-color);
+
+        box-shadow: var(--shadow-light);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: var(--transition);
+
+    }
+
+
+    .nav-links.active {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+
+    }
+
+
+    .nav-links li {
+
+        width: 100%;
+
+    }
+
+
+    .nav-links a {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 0.75rem 1.5rem;
+
+    }
+
+
+    .nav-links a::after {
+
+        left: 1.5rem;
+
+        bottom: 5px;
+
+    }
+
+}
+
+/* ==========================================================
+                    THEME TOGGLE
+========================================================== */
+
+.theme-toggle{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    border:1px solid var(--border-color);
+
+    background:var(--card-color);
+
+    color:var(--primary-text);
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+
+.theme-toggle:hover{
+
+    color:white;
+
+    background:var(--primary-color);
+
+    transform:rotate(15deg);
+
+}

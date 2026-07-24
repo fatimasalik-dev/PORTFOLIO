@@ -2,7 +2,7 @@
                         HERO SECTION
 ========================================================== */
 
-.hero{
+/* .hero{
 
     min-height:90vh;
 
@@ -10,8 +10,14 @@
 
     align-items:center;
 
-}
+} */
 
+
+.hero {
+    min-height: clamp(650px, 80vh, 780px);
+    display: flex;
+    align-items: center;
+}
 
 /* ==========================================================
                     HERO CONTAINER
@@ -202,38 +208,38 @@
             HERO SOCIAL ICONS
 ========================================== */
 
-.hero-content{
 
-    position: relative;
-
-}
 .hero-text p{
 
     max-width:650px;
 
 }
-.hero-social{
 
-    position: absolute;
+/* ==========================================================
+                    HERO IMAGE
+========================================================== */
 
-    top: -20px;
+.hero-image{
 
-right:25px;
-    display: flex;
+    display:flex;
 
-    gap: 1rem;
-
-    z-index: 10;
+    justify-content:center;
 
 }
 
 /* ======================================
-        HERO IMAGE
+        HERO IMAGE + SOCIAL LINKS
 ====================================== */
 
 .hero-image{
 
-    position:relative;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:1.5rem;
 
 }
 
@@ -242,12 +248,6 @@ right:25px;
 ====================================== */
 
 .hero-social{
-
-    position:absolute;
-
-    top:-120px;
-
-    right:0;
 
     display:flex;
 
@@ -290,20 +290,11 @@ right:25px;
     transform:translateY(-5px) scale(1.08);
 
 }
-   
-/* ==========================================================
-                    HERO IMAGE
-========================================================== */
-
-.hero-image{
-
-    display:flex;
-
-    justify-content:center;
-
-}
 
 
+/* ======================================
+        HERO IMAGE
+====================================== */
 
 .hero-image img{
 
@@ -318,11 +309,10 @@ right:25px;
     border:6px solid var(--primary-color);
 
     box-shadow:
+
         0 0 40px rgba(212, 229, 248, 0.25);
 
-    /* transition:var(--transition); */
-        transition:.4s;
-
+    transition:.4s;
 
 }
 
@@ -333,7 +323,6 @@ right:25px;
     transform:scale(1.03);
 
 }
-
 
 
 /* ==========================================================
@@ -550,7 +539,8 @@ right:25px;
 
     width:100%;
 
-    height:220px;
+    /* height:50%; */
+    /* height: 290px; */
 
     object-fit:cover;
 
@@ -976,5 +966,387 @@ right:25px;
 .contact-links a:hover{
 
     color:var(--primary-color);
+
+}
+
+
+
+
+
+/* ==========================================================
+                    MOBILE HERO RESPONSIVENESS
+========================================================== */
+
+@media (max-width: 767px){
+
+    /* Stack image and text vertically */
+    .hero .container{
+
+        grid-template-columns:1fr;
+
+        gap:2rem;
+
+    }
+
+
+    /* Put image before text */
+    .hero-image{
+
+        order:-1;
+
+    }
+
+
+    /* Keep the image perfectly circular */
+    .hero-image img{
+
+        width:250px;
+
+        height:250px;
+
+        aspect-ratio:1 / 1;
+
+        border-radius:50%;
+
+    }
+
+
+    /* Adjust hero section height */
+    .hero{
+
+        min-height:auto;
+
+        padding:5rem 0;
+
+    }
+
+
+    /* Center hero content on mobile */
+    .hero-content{
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+
+    .hero-content h2{
+
+        font-size:1.3rem;
+
+    }
+
+
+    .hero-description{
+
+        font-size:1rem;
+
+        text-align:center;
+
+    }
+
+
+    /* Keep buttons comfortable on mobile */
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    /* Move social icons into normal flow */
+    /* .hero-social{
+
+        position:static;
+
+        justify-content:center;
+
+        margin-bottom:1rem;
+            
+
+    } */
+
+}
+
+
+.hero-image img {
+    width:250px;
+    height:250px;
+    aspect-ratio:1 / 1;
+    border-radius:50%;
+}
+
+
+
+
+
+/* ==========================================================
+                    MOBILE HERO LAYOUT
+========================================================== */
+
+@media (max-width: 767px){
+
+    /* Stack the hero sections vertically */
+    .hero .container{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:2rem;
+
+    }
+
+
+    /* Move the entire image section before the text */
+    .hero-image{
+
+        order:-1;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:1.5rem;
+
+    }
+
+
+    /* Social icons appear above the image */
+    .hero-social{
+
+        position:static;
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:14px;
+
+        order:-1;
+
+    }
+
+
+    /* Keep image circular */
+    .hero-image img{
+
+        width:250px;
+
+        height:250px;
+
+        aspect-ratio:1 / 1;
+
+        object-fit:cover;
+
+        border-radius:50%;
+
+    }
+
+
+    /* Center the text */
+    .hero-content{
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+
+    .hero-description{
+
+        text-align:center;
+
+    }
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+                    CONTACT FORM
+========================================================== */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+    text-align:left;
+
+}
+
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+
+}
+
+
+.form-group label{
+
+    color:var(--primary-text);
+
+    font-weight:600;
+
+    font-size:.95rem;
+
+}
+
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:1rem 1.1rem;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    color:var(--primary-text);
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-small);
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:150px;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:var(--secondary-text);
+
+    opacity:.7;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 0 3px rgba(59,130,246,.15);
+
+}
+
+
+.contact-form .primary-btn{
+
+    align-self:flex-start;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================================
+                CONTACT CONTENT LAYOUT
+========================================================== */
+
+.contact-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:2rem;
+
+    align-items:stretch;
+
+}
+
+
+/* ==========================================================
+                CONTACT INFORMATION CARD
+========================================================== */
+
+.contact-information{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-medium);
+
+    padding:2.5rem;
+
+    box-shadow:var(--shadow-light);
+
+}
+
+
+/* ==========================================================
+                CONTACT FORM CARD
+========================================================== */
+
+.contact-form-container{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-medium);
+
+    padding:2.5rem;
+
+    box-shadow:var(--shadow-light);
 
 }

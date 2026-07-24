@@ -41,39 +41,93 @@
 
     <header>
  <div class="container">  
-        <nav class="navbar">
 
-            <!-- Logo / Name -->
+    <nav class="navbar">
 
-            <div class="logo">
+    <div class="logo">
 
-                <a href="index.html">
-                    FS.
-                </a>
+        <a href="#hero">
+            FS.
+        </a>
 
-            </div>
+    </div>
 
-            <!-- Navigation Links -->
 
-            <ul class="nav-links">
+    <button
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
 
-                <li><a href="index.html" class="active">Home</a></li>
+        <i class="fas fa-bars"></i>
 
-                <li><a href="About_Me.html">About Me</a></li>
+    </button>
 
-                <li><a href="Projects.html">Projects</a></li>
 
-                <li><a href="Certifications.html">Certifications</a></li>
+    <ul class="nav-links">
 
-                <!-- <li><a href="assets/Fatima_Salik_Resume.pdf">Resume</a></li> -->
+        <li>
+            <a href="#hero">
+                Home
+            </a>
+        </li>
 
-                <li><a href="Contact.html">Contact</a></li>
+        <li>
+            <a href="#projects">
+                Projects
+            </a>
+        </li>
 
-                
+        <li>
+            <a href="#skills">
+                Skills
+            </a>
+        </li>
 
-            </ul>
+        <li>
+            <a href="#education">
+                Education
+            </a>
+        </li>
 
-        </nav>
+        <li>
+            <a href="#leadership">
+                Leadership
+            </a>
+        </li>
+
+        <li>
+            <a href="#certifications">
+                Certifications
+            </a>
+        </li>
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+<button
+    id="theme-toggle"
+    class="theme-toggle"
+    aria-label="Toggle dark mode"
+    type="button"
+>
+    <i class="fas fa-moon"></i>
+</button>
+    </ul>
+
+    
+
+</nav>
+          
+        
 </div>
     </header>
 
@@ -116,40 +170,25 @@
 
                 <p class="hero-description">
 
-                    Passionate about using data, technology, and software to
-                    solve meaningful real-world problems.
-
-                    I am currently building my knowledge in programming,
-                    artificial intelligence, and data science while continuously
-                    expanding my skills through projects, competitions, and
-                    lifelong learning.
+                    Passionate about using data and technology to
+                    solve real-world problems.
+                  
 
                 </p>
 
-                <!-- Buttons -->
+        <div class="resume-cta-content">
+<a href="assets/Fatima_Salik_Resume.pdf" class="primary-btn">
 
-                <div class="hero-buttons">
-
-    <a href="Projects.html" class="primary-btn">
-
-        Explore My Work
-
+  View Resume
     </a>
 
-    <!-- <a href="About_me.html" class="secondary-btn">
-
-        My Learning Journey
-
-    </a> -->
-
-</div>
+  </div>
 
             </div>
 
 
             <!-- Right Side -->
 
-            <div class="hero-image">
 
                 <div class="hero-image">
 
@@ -173,63 +212,11 @@
          alt="Fatima Salik">
 
 </div>
-
-
         </section>
-       
-            <!-- ==================================
-                ABOUT PREVIEW
-    =================================== -->
-
-    <!-- <section id="about" class="about">
-        <div class="container"> 
-            <div class="about-card">  
-            <h1>Who I am: </h1>    <br>
-            </div>
-
-<div class="about-text">
-
-    <p>
-
-        I am currently pursuing a Bachelor's degree in
-        Computer Science while building a strong foundation
-        in programming, software development, and data science.
-
-    </p>
-
-    <p>
-
-        I enjoy learning new technologies, solving logical
-        problems, and turning ideas into practical software
-        solutions through continuous learning and hands-on
-        projects.
-
-    </p>
-
-    <p>
-
-        As I progress through my university journey,
-        this portfolio documents my growth, projects,
-        achievements, and experiences as an aspiring
-        technology professional.
-
-    </p>
-    <br>
-
-    <a href="About_me.html" class="primary-btn">
-
-        My Learning Journey →
-
-    </a>
-
-</div>
-</div>
- </div>
-
-    </section> -->
+   
 
     <!-- ==================================
-            FEATURED PROJECTS
+            Recent PROJECTS
     =================================== -->
 
     <section id="projects" class="featured-projects">
@@ -237,11 +224,11 @@
 
         <div class="section-heading">
 
-            <h2>Featured Projects</h2>
+            <h2>Recent Projects</h2>
 
             <p>
 
-                A selection of projects that represent my learning journey
+                My most recent projects that represent my learning journey
                 and practical experience.
 
             </p>
@@ -256,7 +243,7 @@
            
             <article class="project-card">
 
-    <img src="images/ai-kiddy.png"
+    <img src="images/ai-kiddy.jpg" height="180px"
          alt="AI Kiddy Learner Project Screenshot">
 
     <div class="project-content">
@@ -273,13 +260,11 @@
 
         </h3>
 
-        <p>
+        <!-- <p>
 
-            An educational game designed to make learning fun
-            and interactive for children while introducing
-            AI-assisted educational concepts.
+            An educational game for kids
 
-        </p>
+        </p> -->
 
         <div class="project-meta">
 
@@ -349,7 +334,7 @@
 
             <article class="project-card">
 
-    <img src="images/stem-sara.png"
+    <img src="images/stem-sara.png" hieght="230px"
          alt="STEM_SARA Club Website Screenshot">
 
     <div class="project-content">
@@ -366,12 +351,12 @@
 
         </h3>
 
-        <p>
+        <!-- <p>
 
             A responsive website developed using HTML and CSS
-            to present the club's activities and achievements.
+            for a club
 
-        </p>
+        </p> -->
 
         <div class="project-meta">
 
@@ -418,11 +403,7 @@
 
         <div class="project-links">
 
-            <!-- <a href="#" class="secondary-btn">
-
-                View Code
-
-            </a> -->
+           
 
             <a href="https://github.com/fatimasalik-dev/STEM_SARA"
    class="secondary-btn"
@@ -433,22 +414,19 @@
 
 </a>
 
-            <!-- <a href="#" class="primary-btn">
+    
 
-                Live Demo
-
-            </a> -->
-
-<a href="https://fatimasalik-dev.github.io/STEM_SARA/"
+<!-- <a href="https://fatimasalik-dev.github.io/STEM_SARA/" 
    class="primary-btn"
    target="_blank"
-   rel="noopener noreferrer">
+   rel="noopener noreferrer">-->
+
+<a href="#hero"
+      class="primary-btn"> 
 
     Live Demo
 
 </a>
-
-
 
 
         </div>
@@ -460,17 +438,6 @@
         </div>
 
 
-
-        <div class="projects-button">
-
-            <a href="Projects.html"
-                class="primary-btn">
-
-                View All Projects
-
-            </a>
-
-        </div>
  </div>
     </section>
 
@@ -560,7 +527,6 @@
                     <span>Learning Java</span>
                     <span>Learning JavaScript</span>
                     <span>Building Projects</span>
-                    <span>Preparing for Hackathons</span>
                     <span>Internships</span>
 
                 </div>
@@ -573,37 +539,1343 @@
 
 </section>
 
-     
-        <!-- ==================================
-                CONTACT CTA
-    =================================== -->
 
-<section id="contact" class="contact">
+<!-- ==================================================
+                EDUCATION & QUALIFICATIONS
+================================================== -->
+
+<section id="education" class="education">
 
     <div class="container">
 
-        <div class="contact-card">
+        <div class="section-heading">
 
-            <h2>Let's Build Something Meaningful Together</h2>
+            <h2>Education & Qualifications</h2>
 
-            <p> <br>
-                Looking for intern, collaborator, or a passionate fellow learner, I would be happy to hear from you.
+            <p>
+
+                My academic journey and qualifications
+                that have shaped my foundation in
+                Computer Science and technology.
+
             </p>
-<br>
-            <div class="contact-buttons">
 
-               <a href="#connect-anchor" class="primary-btn">
-Let's Connect</a>
+        </div>
 
-            </div>
+
+        <div class="education-grid">
+
+
+            <!-- =========================================
+                    BACHELOR OF COMPUTER SCIENCE
+            ========================================== -->
+
+            <article class="education-card">
+
+                <h3>
+
+                    Bachelor of Computer Science
+
+                </h3>
+
+
+                <span class="education-date">
+
+                    2026 – 2029 (Expected)
+
+                </span>
+
+
+                <h4>
+
+                    <a
+                        href="https://aiu.edu.my/school-of-computing-and-informatics/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        Albukhary International University
+
+                    </a>
+
+                </h4>
+
+
+                <p>
+
+                    Currently pursuing a Bachelor's degree in
+                    Computer Science, building a strong foundation
+                    in computing and data science while actively
+                    participating in academic and extracurricular
+                    initiatives.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- =========================================
+                    DIPLOMA IN MATHEMATICAL STUDIES
+            ========================================== -->
+
+            <article class="education-card">
+
+                <h3>
+
+                    Diploma in Mathematical Studies
+
+                </h3>
+
+
+                <span class="education-date">
+
+                    Jan 2025 – Sep 2025
+
+                </span>
+
+
+                <h4>
+
+                    Farhang Sara-e-Kankor Educational Center
+
+                </h4>
+
+
+                <p>
+
+                    Completed an intensive diploma covering advanced
+                    mathematical concepts, analytical thinking,
+                    and problem-solving techniques.
+
+                </p>
+
+
+                <p>
+
+                    <strong>Grade:</strong> 94 / 100
+
+                </p>
+
+            </article>
+
+
+
+            <!-- =========================================
+                    PRE-STEM PROGRAM
+            ========================================== -->
+
+            <article class="education-card">
+
+                <h3>
+
+                    Pre-STEM Program
+
+                </h3>
+
+
+                <span class="education-date">
+
+                    2024
+
+                </span>
+
+
+                <h4>
+
+                    <a
+                        href="https://www.linkedin.com/school/creightonuniversity/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        Creighton University
+
+                    </a>
+
+                </h4>
+
+
+                <p>
+
+                    Successfully completed the 20-month foundation program,
+                    strengthening scientific reasoning, academic
+                    writing, and university-level preparation.
+
+                </p>
+
+                <p>
+
+                    <strong>CGPA:</strong> 3.33 / 4.00
+
+                </p>
+
+            </article>
+
 
         </div>
 
     </div>
 
 </section>
-           
 
+     
+
+<!-- ==================================================
+            LEADERSHIP & ACTIVITIES
+================================================== -->
+
+<section
+    id="leadership"
+    class="leadership"
+>
+
+
+    <div class="container">
+
+
+        <!-- ==================================================
+                    LEADERSHIP EXPERIENCE
+        ================================================== -->
+
+        <div class="leadership-section">
+
+
+            <div class="section-heading">
+
+                <h2>Leadership Experience</h2>
+
+                <p>
+
+                    Experiences through which I have developed
+                    leadership, communication, teaching, and
+                    collaboration skills.
+
+                </p>
+
+            </div>
+
+
+            <div class="experience-grid">
+
+
+                <!-- =========================================
+                        GEL TRAINER
+                ========================================== -->
+
+                <article class="experience-card">
+
+
+                    <h3>
+
+                        Global English Language (GEL) Trainer
+
+                    </h3>
+
+
+                    <span class="experience-date">
+
+                        Sep 2022 – Apr 2024
+
+                    </span>
+
+
+                    <h4>
+
+                        Jesuit Worldwide Learning
+
+                    </h4>
+
+
+                    <p class="experience-type">
+
+                        Part-time
+
+                    </p>
+
+
+                    <p>
+
+                        Delivered English language instruction to
+                        learners from diverse educational backgrounds
+                        while facilitating interactive classroom
+                        activities and encouraging collaborative
+                        learning.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- =========================================
+                        EOTS TRAINER
+                ========================================== -->
+
+                <article class="experience-card">
+
+
+                    <h3>
+
+                        Each One Teach Some (EOTS) Trainer
+
+                    </h3>
+
+
+                    <span class="experience-date">
+
+                        Oct 2023 – Feb 2024
+
+                    </span>
+
+
+                    <h4>
+
+                        New Horizon Human Welfare &
+                        Development Organization
+
+                    </h4>
+
+
+                    <p class="experience-type">
+
+                        Part-time
+
+                    </p>
+
+
+                    <p>
+
+                        Taught English to young learners through
+                        the Each One Teach Some initiative, creating engaging
+                        lessons and supporting students' language
+                        development in collaborative classroom
+                        settings.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- =========================================
+                        LEARNING FACILITATOR INTERN
+                ========================================== -->
+
+                <article class="experience-card">
+
+
+                    <h3>
+
+                        Learning Facilitator Intern
+
+                    </h3>
+
+
+                    <span class="experience-date">
+
+                        2022
+
+                    </span>
+
+
+                    <h4>
+
+                        Catholic University of
+                        Eichstätt-Ingolstadt
+
+                    </h4>
+
+
+                    <p class="experience-type">
+
+                        3-Month Internship
+
+                    </p>
+
+
+                    <p>
+
+                        Completed a supervised internship applying
+                        learner-centered teaching methodologies,
+                        facilitation techniques, and educational
+                        communication strategies.
+
+                    </p>
+
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================================
+                            ACTIVITIES
+        ================================================== -->
+
+        <div class="activities-section">
+<br>
+
+            <div class="section-heading">
+
+                <h2>Activities</h2>
+
+                <p>
+
+                    Initiatives and activities through which I
+                    contribute to learning, technology, sustainability,
+                    and community development.
+
+                </p>
+
+            </div>
+
+
+            <div class="activities-grid">
+
+
+                <!-- =========================================
+                        STEM CORE
+                ========================================== -->
+
+                <article class="activity-card">
+
+
+                    <h3>
+
+                        STEM-CORE Club Leader
+
+                    </h3>
+
+
+                    <p>
+
+                        Leading a student-run STEM club that equips
+                        high school students with practical technology skills
+                        through projects, mentorship, and collaboration,
+                        preparing them for scholarships, careers, and
+                        real-world problem solving.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- =========================================
+                    CYBERSECURITY CONTENT CREATION
+                ========================================== -->
+
+                <article class="activity-card">
+
+
+                    <h3>
+
+                        Cybersecurity Content Creation Contest
+
+                    </h3>
+
+
+                    <p>
+
+                        Participated in creating educational content
+                        that raises awareness about cybersecurity
+                        concepts and safe digital practices.
+
+                    </p>
+
+
+                    <a
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Credential
+
+                        <span>→</span>
+
+                    </a>
+
+
+                </article>
+
+
+
+                <!-- =========================================
+                    SAVE THE EARTH CAMPAIGN
+                ========================================== -->
+
+                <article class="activity-card">
+
+
+                    <h3>
+
+                        Save the Earth Campaign
+
+                    </h3>
+
+
+                    <p>
+
+                        Participated in environmental awareness
+                        initiatives encouraging sustainable living
+                        and responsible community action.
+
+                    </p>
+
+
+                    <a
+                        href="assets/Fatima Salik.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Credential
+
+                        <span>→</span>
+
+                    </a>
+
+
+                </article>
+
+
+
+                <!-- =========================================
+                    GREEN CREDIT INITIATIVE
+                ========================================== -->
+
+                <article class="activity-card">
+
+
+                    <h3>
+
+                        Campus Recycling & GreenCredit Initiative
+
+                    </h3>
+
+
+                    <p>
+
+                        An ongoing campus sustainability initiative. I
+                     recycle daily plastic waste and participate on 
+                    AIU's GreenCredit platform.
+
+                    </p>
+
+
+                    <a
+                        href="images/Let’s Save our home, We only have ONE!.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View GreenCredit Activity
+
+                        <span>→</span>
+
+                    </a>
+
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<section id ="certifications" class="page-title">
+
+    <div class="container">
+
+        <h1>
+
+            Certifications
+        <hr>
+
+        </h1>
+
+        <p>
+
+            A collection of selected certifications and learning experiences
+            that reflect my continuous growth in Computer Science, technology,
+            research, and professional development.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+                CERTIFICATE GALLERY
+========================================================== -->
+
+<section id="certifications" class="certifications-section">    
+
+    <div class="container">
+
+        <div class="certifications-grid">
+
+
+            <!-- ==================================================
+                    1. PYTHON FOR EVERYBODY
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/Python for Everbody.png" 
+                        alt="Python For Everybody certificate"
+                    >
+
+                </div>
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        Python For Everybody
+
+                    </h3>
+
+                    <h4>
+
+                        University of Michigan
+
+                    </h4>
+
+                    <!-- <p class="certificate-date">
+
+                        Issued March 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://coursera.org/share/e3396b25f0f3582d76268d55d3f1d013"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    2. INTRODUCTION TO ARTIFICIAL INTELLIGENCE
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/Introduction to Artificial Intelligence (AI).png"
+                        alt="Introduction to Artificial Intelligence certificate"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        Introduction to Artificial Intelligence
+
+                    </h3>
+
+                    <h4>
+
+                        IBM
+
+                    </h4>
+
+                    <!-- <p class="certificate-date">
+
+                        Issued March 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://coursera.org/share/fda45283ef0bf07f36fd5e07af7b56d3"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    3. HTML, CSS & JAVASCRIPT
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/HTML, CSS & JavaScript for Web Developers.png"
+                        alt="HTML, CSS and JavaScript for Web Developers certificate"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        HTML, CSS & JavaScript for Web Developers
+
+                    </h3>
+
+                    <h4>
+
+                        Johns Hopkins University
+
+                    </h4>
+
+                    <!-- <p class="certificate-date">
+
+                        Issued February 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://coursera.org/share/d7d21f0ab8a72f09348de0f684128a09"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    4. HTML AND CSS IN DEPTH
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/HTML & CSS in Depth.png"
+                        alt="HTML and CSS in Depth certificate"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        HTML and CSS in Depth
+
+                    </h3>
+
+                    <h4>
+
+                        Meta
+
+                    </h4>
+
+                    <!-- 
+                    <p class="certificate-date">
+
+                        Issued February 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://coursera.org/share/1f655c7accd865d2654653c52aec29e2"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    5. FUNDAMENTALS OF COMPUTER ORGANIZATION
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/Computer Organization and Architecture.png"
+                        alt="Fundamentals of Computer Organization certificate"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        Fundamentals of Computer Organization
+
+                    </h3>
+
+                    <h4>
+
+                        International Institute of Information Technology Hyderabad
+
+                    </h4>
+
+                    <!-- <p class="certificate-date">
+
+                        Issued January 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://coursera.org/share/3939b060bca8b1dcbe895bf728aba1ef"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    6. EXPLORING C
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/Exploring C.png"
+                        alt="Exploring C certificate"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        Exploring C
+
+                    </h3>
+
+                    <h4>
+
+                        University of Michigan
+
+                    </h4>
+
+                    <!-- <p class="certificate-date">
+
+                        Issued March 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://coursera.org/share/cbe9327d915bb85c6d0a898e89e181f7"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    7. LEARNING FACILITATOR
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/Learning Facilitator Professional Certification.png"
+                        alt="Learning Facilitator Professional Certificate"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        Learning Facilitator Professional Certificate
+
+                    </h3>
+
+                    <h4>
+
+                        Catholic University of Eichstätt-Ingolstadt
+
+                    </h4>
+
+                    <!-- 
+                    <p class="certificate-date">
+
+                        Issued September 2022
+
+                    </p> -->
+
+
+                    <a
+                        href="images/certificates/Learning Facilitator Professional Certification.png"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Certificate
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                    8. RESEARCH SKILLS WORKSHOP
+            ================================================== -->
+
+            <article class="certification-card">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="images/certificates/Research Skills Workshop Certificate.jpg"
+                        alt="Research Skills Workshop Certification"
+                    >
+
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <h3>
+
+                        Research Skills Workshop Certification
+
+                    </h3>
+
+                    <h4>
+
+                        Albukhary International University
+
+                    </h4>
+
+                    <!-- <p class="certificate-date">
+
+                        Issued March 2026
+
+                    </p> -->
+
+
+                    <a
+                        href="https://www.linkedin.com/posts/fatima-salik-26726b305_academicabrresearch-publications-learnabrtoabrcontributeabrtoabryourabrfeild-share-7453733437569544192-c3xz/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3Qma8BY6fig5oMVu-j2WMh1f1hyDpmYFo"
+                        class="certificate-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View Credentials
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+                        ABOUT
+================================================== -->
+
+<section id="about" class="about">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <h2>About Me</h2>
+
+            <p>
+
+                The journey, experiences, and aspirations
+                behind my work in Computer Science and
+                Data Science.
+
+            </p>
+
+        </div>
+
+
+        <!-- ==================================================
+                            STORY ONE
+        ================================================== -->
+
+        <div class="story-block">
+
+
+            <div class="story-text">
+
+
+                <p>
+
+                   My academic journey began with online education, an experience that fostered resilience, independent learning, and adaptability. 
+
+                </p>
+                <p>
+I am now pursuing a Bachelor's degree in Computer Science at Albukhary International University, with interests in Data Science, full-stack development, and educational technology.
+                </p>
+
+
+                <!-- <p>
+
+                    I taught English, mentored students, and supported
+                    community-based learning initiatives because I
+                    believed that education should remain accessible,
+                    even in the most difficult circumstances. Those
+                    experiences shaped my resilience and inspired my
+                    lifelong commitment to expanding educational
+                    opportunities for others.
+
+                </p> -->
+
+
+            </div>
+
+
+            <div class="story-image">
+
+
+                <img
+                    src="images/story1.png" height="150px" width="160px"
+                    alt="Online Education"
+                >
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+                            STORY TWO
+        ================================================== -->
+
+        <div class="story-block">
+
+
+            <div class="story-image">
+
+
+                <img
+                    src="images/story2.jpg"height="150px" width="160px"
+                    alt="Studying at Albukhary International University"
+                >
+
+
+            </div>
+
+
+            <div class="story-text">
+
+
+                <p>
+
+                I value meeting people from different countries, as it broadens my perspective and I enjoy exploring topics in depth through independent learning. 
+                <p>  Beyond technology, I enjoy reading poetry and reciting works by Hafiz and Mawlana, painting and drawing, exploring psychology, and watching science fiction and action films.  </p>
+              
+
+                </p>
+<p>
+As I continue developing my technical and research skills, I aspire to build innovative solutions that expand access to education and contribute to sustainable development.
+</p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+                  
+
+       <!-- ==========================================================
+                        CONTACT SECTION
+========================================================== -->
+
+  <section id="contact" class="contact-section">
+
+
+    <div class="container">
+
+        <div class="contact-header">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+            </p>
+
+        </div>
+
+
+        <div class="contact-content">
+
+
+            <div class="contact-information">
+
+                <h3>Get in Touch</h3>
+<p>
+    I value connecting with people from different backgrounds and exchanging ideas. Whether you'd like to discuss a project, collaborate, or simply connect, I appreciate it.
+</p>
+            
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+
+                        <h4>Email</h4>
+
+                    
+<a href="mailto:salikfatima2004@gmail.com">
+    salikfatima2004@gmail.com
+</a>
+
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <h4>LinkedIn</h4>
+
+                        <a
+                            href="https://www.linkedin.com/in/fatimasalik/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn Profile
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <h4>GitHub</h4>
+
+                        <a
+                            href="https://github.com/fatimasalik-dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+           
+<div class="contact-form-container">
+
+    <h3>Leave a Message</h3>
+
+
+    <form
+        action="https://formspree.io/f/xqerydzb"
+        method="POST"
+        class="contact-form"
+    >
+
+        <!-- Name -->
+
+        <div class="form-group">
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+            >
+
+        </div>
+
+
+        <!-- Email -->
+
+        <div class="form-group">
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+                required
+            >
+
+        </div>
+
+
+        <!-- Message -->
+
+        <div class="form-group">
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+
+        </div>
+
+
+        <!-- Submit Button -->
+
+        <button
+            type="submit"
+            class="primary-btn"
+        >
+
+            Send Message
+
+            <span>→</span>
+
+        </button>
+
+    </form>
+
+</div>
+
+
+    </div>
+
+</section> 
 </main>
 
 
@@ -626,15 +1898,12 @@ Let's Connect</a>
 
             <p class="footer-title">
 
-                Computer Science Student | Aspiring Data Scientist
-
+Computer Science Student | Aspiring Full-Stack Developer & Data Scientist
             </p>
 
             <p class="footer-description">
 
-                Thank you for visiting my portfolio. This website
-                documents my journey as I continue learning,
-                building projects, and growing into a  Full Stack Developer and a data scientist.
+             Follow my journey as I build projects and grow as a Full-Stack Developer and Data Scientist.
 
             </p>
 
@@ -654,7 +1923,7 @@ Let's Connect</a>
 
                 <p>
 
-                Fatima salik - Live Portfolio.
+                Fatima salik - Portfolio.
                 </p>
 
             </div>
@@ -675,13 +1944,3 @@ Let's Connect</a>
 </html>
 
 
-    </main>
-
-
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
-
-</body>
-
-</html>
